@@ -21,7 +21,7 @@ struct MeshGradientControlLayout: Layout {
       let dimensions = subview.dimensions(in: proposal)
       let subProposal = ProposedViewSize(width: dimensions.width, height: dimensions.height)
       
-      subview.place(at: CGPoint(x: bounds.minX + bounds.width * CGFloat(relativePoint.x), y: bounds.minY + bounds.height * CGFloat(relativePoint.y)), anchor: .center, proposal: proposal)
+      subview.place(at: CGPoint(x: bounds.minX + bounds.width * CGFloat(relativePoint.x), y: bounds.minY + bounds.height * CGFloat(relativePoint.y)), anchor: .center, proposal: subProposal)
     }
   }
   

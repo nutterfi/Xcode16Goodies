@@ -59,10 +59,26 @@
 			);
 			target = 297B04892C1A9B880018C8B1 /* Xcode16Goodies */;
 		};
+		29CC2E272C25F9CD004F9EE9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ColorMixDemoView.swift,
+			);
+			target = 297B04892C1A9B880018C8B1 /* Xcode16Goodies */;
+		};
+		29CC2E2A2C260BAD004F9EE9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TimeDataSourceExamplesView.swift,
+			);
+			target = 297B04892C1A9B880018C8B1 /* Xcode16Goodies */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		29027E2B2C1EB2E200C830F7 /* TimeDataSource */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (29CC2E2A2C260BAD004F9EE9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = TimeDataSource; sourceTree = "<group>"; };
 		29A13D6B2C1ABDB300DECBD5 /* MeshGradient */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (29A13D6E2C1ABDD100DECBD5 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MeshGradient; sourceTree = "<group>"; };
+		29CC2E242C25F9BE004F9EE9 /* ColorMix */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (29CC2E272C25F9CD004F9EE9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ColorMix; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +129,8 @@
 		297B048C2C1A9B880018C8B1 /* Xcode16Goodies */ = {
 			isa = PBXGroup;
 			children = (
+				29CC2E242C25F9BE004F9EE9 /* ColorMix */,
+				29027E2B2C1EB2E200C830F7 /* TimeDataSource */,
 				29A13D6B2C1ABDB300DECBD5 /* MeshGradient */,
 				297B04B82C1AA8510018C8B1 /* Color.swift */,
 				297B048D2C1A9B880018C8B1 /* Xcode16GoodiesApp.swift */,

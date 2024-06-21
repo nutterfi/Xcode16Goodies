@@ -16,6 +16,7 @@ class MeshGradientBuildModel {
       generateColors()
     }
   }
+  
   var columns: Int = 4 {
     didSet {
       generatePoints()

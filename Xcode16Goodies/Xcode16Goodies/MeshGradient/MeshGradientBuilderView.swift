@@ -11,7 +11,7 @@ struct MeshGradientBuilderView: View {
   @State var model = MeshGradientBuildModel()
   @State var shouldShowColorPickers = true
   var body: some View {
-    VStack {
+    VStack(spacing: 20) {
       controls
       MeshGradient(
         width: model.columns,
@@ -35,18 +35,17 @@ struct MeshGradientBuilderView: View {
           }
         }
       )
-      .padding()
     }
+    .padding()
   }
   
   @ViewBuilder
   var controls: some View {
     VStack {
-      VStack {
-        Toggle(isOn: $shouldShowColorPickers) {
-          Text("Show Color Pickers")
-        }
-        
+      Toggle(isOn: $shouldShowColorPickers) {
+        Text("Show Color Pickers")
+      }
+      HStack {
         Stepper(value: $model.rows) {
           Text("Rows: \(model.rows)")
         }
@@ -56,7 +55,7 @@ struct MeshGradientBuilderView: View {
         }
       }
     }
-    .padding()
+    .font(.caption)
   }
 }
 
